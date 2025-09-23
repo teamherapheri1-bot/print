@@ -10,6 +10,7 @@
             margin: 0;
             background-color: #f5f5f5;
             line-height: 1.6;
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
         }
         header {
             background-color: #333;
@@ -63,13 +64,28 @@
         li {
             margin-bottom: 0.8em;
         }
+        /* Style for the new pricing table */
+        .pricing-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .pricing-table th, .pricing-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .pricing-table th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Print Services</h1>
         <nav>
-            <a href="#terms">Terms & Conditions</a>
+            <a href="#pricing">Pricing</a> <a href="#terms">Terms & Conditions</a>
             <a href="#privacy">Privacy Policy</a>
             <a href="#shipping">Shipping Policy</a>
             <a href="#contact">Contact Us</a>
@@ -85,7 +101,55 @@
             <img src="printer.jpg" alt="Printer">
         </section>
 
-        <!-- Terms and Conditions -->
+        <section id="pricing">
+            <h2>Our Services & Pricing</h2>
+            <p>We offer competitive pricing for our high-quality printing services. All prices are in Indian Rupees (INR) and are inclusive of basic paper costs.</p>
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                        <th>Price (INR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Black & White Printing</td>
+                        <td>A4 Size, 75 GSM Paper</td>
+                        <td>₹ 2.00 per page</td>
+                    </tr>
+                    <tr>
+                        <td>Color Printing</td>
+                        <td>A4 Size, 75 GSM Paper</td>
+                        <td>₹ 10.00 per page</td>
+                    </tr>
+                    <tr>
+                        <td>Back-to-Back B&W Printing</td>
+                        <td>A4 Size, 75 GSM Paper</td>
+                        <td>₹ 3.00 per sheet</td>
+                    </tr>
+                    <tr>
+                        <td>Back-to-Back Color Printing</td>
+                        <td>A4 Size, 75 GSM Paper</td>
+                        <td>₹ 18.00 per sheet</td>
+                    </tr>
+                    <tr>
+                        <td>Photo Printing</td>
+                        <td>4x6 inch, High-Glossy Paper</td>
+                        <td>₹ 25.00 per photo</td>
+                    </tr>
+                     <tr>
+                        <td>Spiral Binding</td>
+                        <td>Per document (up to 100 pages)</td>
+                        <td>₹ 50.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="margin-top: 15px; font-size: 0.9em; color: #555;">
+                <i><strong>Note:</strong> Prices are subject to change and may vary for bulk orders or special paper requirements. Please contact us for a custom quote. Applicable taxes will be charged extra.</i>
+            </p>
+        </section>
+        
         <section id="terms">
             <h2>Terms and Conditions</h2>
             <p class="meta-info">Last updated on 16-09-2025 21:55:44</p>
@@ -110,19 +174,16 @@
             </ul>
         </section>
 
-        <!-- Privacy Policy -->
         <section id="privacy">
             <h2>Privacy Policy</h2>
             <p>Your data and files are kept confidential and are not shared with any third party unless required by law. All payment transactions are secured via Razorpay's encrypted gateway.</p>
         </section>
 
-        <!-- Shipping Policy -->
         <section id="shipping">
             <h2>Shipping Policy</h2>
             <p>Orders are processed within 24 hours. Digital files are printed and made ready for pickup or delivery as per the selected option during checkout.</p>
         </section>
 
-        <!-- Contact -->
         <section id="contact">
             <h2>Contact Us</h2>
             <p class="meta-info">Last updated on 14-09-2025 15:33:08</p>
@@ -133,7 +194,6 @@
             <p><strong>E-Mail ID:</strong> <a href="mailto:teamherapheri1@gmail.com">teamherapheri1@gmail.com</a></p>
         </section>
 
-        <!-- Refund Policy -->
         <section id="refund">
             <h2>Cancellation & Refund Policy</h2>
             <p class="meta-info">Last updated on 16-09-2025 21:55:05</p>
@@ -146,7 +206,6 @@
             </ul>
         </section>
 
-        <!-- Additional Details -->
         <section id="additional">
             <h2>Additional Details</h2>
             <p class="meta-info">Last updated on 16-09-2025 22:15:00</p>
